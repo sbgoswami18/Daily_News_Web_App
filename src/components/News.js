@@ -91,7 +91,7 @@ const News = (props) => {
 
   */
 
-
+if(articles.length !== undefined){
     return (
       <>
         <h1 className="text-center" style={{margin: '35px 0px', marginTop: '90px'}}>Daily News - Top {capitalizeFirstLetter(props.category)} Headlines</h1>
@@ -119,6 +119,7 @@ const News = (props) => {
 
       </>
     );
+}
 }
 
 News.defaultProps = {
